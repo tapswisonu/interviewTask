@@ -1,94 +1,125 @@
-import React from 'react'
-import './Footer.css';
-
+import React from "react";
+import "./Footer.css";  
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-
-    <footer class="p-5 text-lg-start mt-5 border-top">
-      <div className='row'>
-        <div class="col-md-6 col-xl-4 col-sm-6 p-4">
-
-          <div class="mb-3">
-            <h5 class="mb-0" style={{ color: "#fff" }}>LoGo</h5>
+    <footer className="    p-5 text-lg-start mt-5 border-top">
+      <div className="row m-4">
+       
+        <div className="col-md-6 col-xl-4 col-sm-6 p-4">
+          <div className="mb-3">
+            <h5
+              className="mb-0 text-white"
+              style={{ fontSize: "35px", fontWeight: "700" }}
+            >
+              LoGo
+            </h5>
           </div>
 
-          <div class="mb-3">
-            <a href="#" class="social-icon me-3">
-              <i class="fa-brands fa-facebook"></i>
+          <div className="mb-3 d-flex gap-3 ">
+            <a
+              href="#"
+              className="d-flex align-items-center justify-content-center bg-white border rounded-circle text-secondary"
+              style={{ width: "35px", height: "35px" }}
+            >
+              <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="#" class="social-icon me-3">
-              <i class="fa-brands fa-square-twitter"></i>
+            <a
+              href="#"
+              className="d-flex align-items-center justify-content-center bg-white border rounded-circle text-secondary"
+              style={{ width: "35px", height: "35px" }}
+            >
+              <i className="fab fa-linkedin-in fs-5"></i>
             </a>
-            <a href="#" class="social-icon me-3">
-              <i class="fa-brands fa-square-instagram"></i>
+            <a
+              href="#"
+              className="d-flex align-items-center justify-content-center bg-white border rounded-circle text-secondary"
+              style={{ width: "35px", height: "35px" }}
+            >
+              <i className="fa-brands fa-square-twitter"></i>
             </a>
           </div>
-          <div class="card">
-            <div class="card-header">
-              Quote
-            </div>
-            <div class="card-body">
+
+          <div className="card ">
+            <div className="card-header">Quote</div>
+            <div className="card-body">
               <figure>
-                <blockquote class="blockquote">
-                  {/* <p>A well-known quote, contained in a blockquote element.</p> */}
+                <blockquote className="blockquote mb-4">
+                  <p>"Technology is best when it brings people together."</p>
                 </blockquote>
-                <figcaption class="blockquote-footer">
-                  Someone famous in <cite title="Source Title">Source Title</cite>
+                <figcaption className="blockquote-footer">
+                  Matt Mullenweg in{" "}
+                  <cite title="Source Title">WordPress Founder</cite>
                 </figcaption>
               </figure>
             </div>
           </div>
-          <div class="small mt-2">
+        </div>
+
+       
+        <div className="col-md-6 col-xl-4 col-sm-6 p-4 mt-4">
+          <div className="mb-3">
+            <h6 className="mb-0 text-white">About Company</h6>
+          </div>
+          <p className="small ">
+            We are a technology-driven software development company providing
+            tailored web, mobile, and digital solutions to help businesses
+            thrive in the digital age.
+          </p>
+        </div>
+
+       
+        <div className="col-md-6 col-xl-4 col-sm-6 p-4 mt-4">
+          <div className="mb-3">
+            <h6 className="mb-0 text-white">Quick Links</h6>
+          </div>
+          <ul className="list-unstyled small">
+            <li className="mb-2">
+              <a href="#home" className=" text-decoration-none">
+                Home
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#about" className=" text-decoration-none">
+                About Us
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#contact" className=" text-decoration-none">
+                Contact Us
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#sitemap" className=" text-decoration-none">
+                Site Map
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="row m-2">
+        <div className="col-md-6 p-4 mt-4">
+          <div className="small mt-3 ">
             &copy; 2025 YourCompany. All rights reserved.
           </div>
-
         </div>
-        <div class="col-md-6 col-xl-4 col-sm-6 p-4 mt-4">
-
-          <div class="mb-3">
-            <h6 class="mb-0" style={{ color: "#fff" }}>Headings </h6>
-          </div>
-
-          <div class="mb-3">
-            <ul class="list-group  me-3">
-              <li className='list-group-item align-items-center small'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi aut enim repellendus facere? Nisi delectus eius consequatur laborum, excepturi doloremque exercitationem voluptatibus vel amet earum temporibus praesentium veniam quos aperiam.</li>
-            </ul>
-          </div>
-
-
-
-
+        <div className="col-md-6 p-4 mt-4 text-end">
+          <button
+            onClick={scrollToTop}
+            className="mt-4 mt-md-0 btn btn-light rounded-circle "
+            style={{ width: "40px", height: "40px" }}
+          >
+            <i className="fas fa-arrow-up"></i>
+          </button>
         </div>
-        <div class="col-md-6 col-xl-4 col-sm-6 p-4 mt-4">
-
-          <div class="mb-3">
-            <h6 class="mb-0" style={{ color: "#fff" }}>Headings 2</h6>
-          </div>
-
-          <div class="mb-3">
-            <ul class="list-group  me-3">
-              <li className=' align-items-center small'>  Home</li>
-            </ul>
-            <ul class="list-group  me-3">
-              <li className=' align-items-center small'>  About Us</li>
-            </ul>
-            <ul class="list-group  me-3">
-              <li className=' align-items-center small'>  Conatct Us</li>
-            </ul>
-            <ul class="list-group  me-3">
-              <li className=' align-items-center small'>  Site Map</li>
-            </ul>
-          </div>
-
-
-
-
-        </div>
-        </div>
+      </div>
     </footer>
-
-
-  )
+  );
 }
 
-export default Footer
+export default Footer;

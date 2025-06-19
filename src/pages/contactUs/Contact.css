@@ -1,0 +1,10 @@
+.cta-button {
+    padding: 0.75rem 2rem;
+    background: #0B1D51;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}

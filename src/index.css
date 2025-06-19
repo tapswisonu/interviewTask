@@ -6,6 +6,10 @@ body {
   font-family: sans-serif;
 }
 
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color:#0B1D51 !important;
+}
 /* HeroSlider.css */
 .hero-slider {
   width: 100%;
@@ -72,6 +76,10 @@ body {
 
 .cta-button:hover {
   background: #725CAD;
+}
+
+i{
+  color: #0B1D51;
 }
 
 @media (max-width: 768px) {
