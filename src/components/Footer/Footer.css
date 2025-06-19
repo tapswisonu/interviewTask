@@ -1,0 +1,17 @@
+footer {
+    background-color: #020418;
+    color: #91989f;
+}
+.card{
+    background-color: #000957ad;
+    color: #91989f;
+
+}
+.social-icon {
+    font-size: 20px;
+    color: #93aad7;
+}
+.h5, h5 {
+    font-size: 35px;
+    font-weight: 700;
+}

@@ -1,0 +1,25 @@
+/* Header */
+.header {
+    background-color: #FFE3A9;
+}
+
+.navbar-brand{
+    color: #0B1D51;
+    font-size: 30px;
+
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: revert-layer;
+    align-items: center;
+}
+.nav-link {
+    font-weight: 500;
+    border-bottom: 2px solid #ffe2a8;
+    margin-right: 34px;
+    padding: 0px !important;
+}
+.nav-link:focus, .nav-link:hover {
+    border-bottom: 2px solid #0B1D51;
+    color: #0B1D51 ;
+}
