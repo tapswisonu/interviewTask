@@ -15,28 +15,7 @@ A modern, fully responsive landing page built using React JS. The layout is stru
 
 ---
 
-## 📁 Folder Structure
-
-```
-
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/              # Images and static assets
-│   ├── components/          # All reusable components
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Testimonials.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Footer.jsx
-│   │   └── BackToTop.jsx    # (Bonus)
-│   ├── App.js
-│   ├── index.js
-│   └── App.css              # Custom styles (or bootstrap override)
-├── README.md
-└── package.json
-
-````
+  
 
 ---
 
@@ -47,39 +26,8 @@ A modern, fully responsive landing page built using React JS. The layout is stru
 | React          | Core UI framework                                 |
 | Swiper.js      | Image slider for Hero and optional testimonial carousel |
 | Bootstrap 5 CDN| Quick, responsive layout and styles               |
-| AOS (Optional) | Scroll animations                                 |
-| react-icons    | Social media and other icons                      |
 
----
-
-## ⚙️ Setup Instructions
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/yourusername/react-landing-page.git
-cd react-landing-page
-````
-
-2. **Install dependencies**
-
-```bash
-npm install
-```
-
-3. **Start the development server**
-
-```bash
-npm start
-```
-
-4. **Build for production**
-
-```bash
-npm run build
-```
-
----
+ 
 
 ## 🧪 Assumptions & Notes
 
@@ -89,24 +37,16 @@ npm run build
 * Bootstrap is included via CDN in `public/index.html`.
 * No routing is included since this is a single landing page.
 * Responsive and mobile-friendly design is achieved using Bootstrap’s grid and utilities.
-* Icons are placeholders via `react-icons`, and actual links need to be added.
-* For scroll animations or `Back to Top`, AOS or `framer-motion` can be used (bonus optional).
+* For scroll animations or `Back to Top`,  `framer-motion` can be used (bonus optional).
 
 ---
 
 ## 📌 Bonus Features (Optional)
 
 * "Back to Top" button
-* Scroll animations with `AOS`
+* Scroll animations framer motion
 * Smooth scrolling behavior using CSS or JavaScript
 
----
-
-## 📷 Demo Screenshots
-
-> *(Add screenshots or gif of the landing page in action here)*
-
----
 
 ## 🧑‍💻 Author
 
